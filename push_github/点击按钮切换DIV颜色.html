@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>切换DIV颜色</title>
+    <style>
+        .box{
+            margin-top: 200px;
+            margin-left: 500px;
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            font-size: 30px;
+            color:white;
+            text-align: center;
+            line-height: 280px;
+        }
+        .box1{
+            width: 150px;
+            height: 45px;
+            background-color: rgb(29, 121, 158);
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            line-height: 45px;
+            margin-top: -450px;
+            margin-left: 350px;
+        }
+        .box2{
+            width: 150px;
+            height: 45px;
+            background-color: rgb(29, 121, 158);
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            line-height: 45px;
+            margin-top: -45px;
+            margin-left: 570px;
+        }
+        .box3{
+            width: 150px;
+            height: 45px;
+            background-color: rgb(29, 121, 158);
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            line-height: 45px;
+            margin-top: -45px;
+            margin-left: 780px;
+
+        }
+            
+            
+            
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>我是div</span>
+    </div>
+    <div class="box1">
+        <span>变蓝色</span>
+    </div>
+    <div class="box2">
+        <span>变黄色</span>
+    </div>
+    <div class="box3">
+        <span>变绿色</span>
+    </div>
+
+    
+    <script>
+       var oBox=document.getElementsByTagName("div");
+    //    console.log(oBox);
+       var oBox1=document.getElementsByTagName("div");
+    //    console.log(oBox1[0]);
+       oBox1[1].onclick=function(){
+        oBox1[0].style.backgroundColor="blue";
+       }
+       oBox1[2].onclick=function(){
+        oBox1[0].style.backgroundColor="yellow";
+       }
+       oBox1[3].onclick=function(){
+        oBox1[0].style.backgroundColor="green";
+       }
+       oBox1[0].onclick=function(){
+        oBox1[0].style.backgroundColor="orange";
+       }
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

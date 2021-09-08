@@ -1,0 +1,229 @@
+body,p,h3{
+    margin: 0;
+}
+
+.wrap .header{
+    width: 100%;
+}
+.header .header-nav{
+    width: 1240px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.header-nav img{
+    width: 200px;
+}
+.header-nav .jt{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.header-nav .nav-list{
+    float:right;
+    text-align: right;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+.nav-list a{
+    margin: 0 10px;
+}
+
+.nav-list a:hover{
+    color: rgb(213, 13, 240);
+}
+.header .header-banner{
+    position:relative;
+    width: 100%;
+    height: 622px;
+}
+.header-banner .banner-imgs{
+    width: 100%;
+    height: 100%;
+}
+.banner-imgs img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.banner-btn{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+}
+.banner-btn1 img{
+    width: 80px;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    margin: auto
+}
+.banner-btn1 .btn-left{
+    left: 0;
+}
+.banner-btn1 .btn-right{
+    right:0;
+}
+.banner-btn span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color:transparent;
+    font-size: 0;
+    border-radius: 50%;
+    border:1px solid white;
+    margin:2px;
+}
+.banner-btn .select{
+    background-color: orange;
+}
+.content{
+    width: 100%;
+}
+.content .content-server{
+    width: 100%;
+    margin-top:54px;
+}
+.server-title{
+    width: 1002px;
+    border-top:1px solid #ccc;
+    margin:0 auto;
+}
+.server-title .title-text{
+    width: 165px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -15px;
+    background-color: white;
+}
+.title-text h3{
+    font-size: 23px;
+}
+.title-text p{
+    font-size: 15px;
+    color:#ccc;
+}
+.content-server .server-introduce{
+    text-align: center;
+    font-size: 15px;
+    color: #ccc;
+    margin-top: 21px;
+}
+.content-server .server-item{
+    width: 1054px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.server-item ul>li{
+    position:relative;
+    width: 318px;
+    height: 508px;
+    /* background-color: rebeccapurple; */
+    float: left;
+    margin:0 15px;
+    border:1px solid #ccc;
+    text-align: center;
+}
+.server-item ul>li>img{
+    width: 220px;
+    height: 128px;
+    margin-top: 20px;
+}
+.server-item ul>li>h4{
+    font-size: 23px;
+}
+.server-item ul>li>p{
+    font-size: 9px;
+    width: 245px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+.server-item ul>li button{
+    position:absolute;
+    bottom:60px;
+    width: 148px;
+    height: 36px;
+    border:1px solid orange;
+    color:orange;
+    line-height: 36px;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+}
+.server-item ul{
+    overflow: hidden;
+    width: 100%;
+}
+.content .content-record{
+    margin-top: 60px;
+}
+.content-record .record-videos{
+    width: 1092px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.record-videos ul>li{
+    position:relative;
+    width: 324px;
+    height: 211px;
+    float: left;
+    margin: 20px;
+}
+.record-videos ul>li>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.record-videos ul{
+    width: 100%;
+    overflow: hidden;
+}
+.foot{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-size: 12px;
+    color:white;
+}
+.foot p{
+    line-height: 25px;
+    text-align: center;
+}
+.record-videos ul>li>img{
+    position: absolute;
+    width: 60px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 50%;
+    z-index: 1;
+}
+.banner-imgs img{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.banner-imgs .select{
+    display: block;
+}
+.server-item ul>li button:hover{
+    background-color: orange;
+    color:white;
+}
