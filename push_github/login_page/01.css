@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1928;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #4471a3;
+    box-shadow: 15px 15px 10px rgb(33, 45, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+.container form{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.container form .tbx{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    background: none;
+    color: #ffff;
+    font-size: 15px;
+}
+.container form .tbx::placeholder{
+    color: rgb(167, 154, 154);
+    font-size: 15px;
+}
+.container form .sub{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #ffff;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    color: #ffff;
+    background: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.container form .res{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #ffff;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    color: #ffff;
+    background: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.container h1{
+    color:#ecf0f1;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-shadow: 5px 5px 5px rgb(33,45,58,0.3);
+    z-index: 1;
+}
+.container .in{
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background:#7131da;
+    transform: translate(-50%,-50%);
+    animation: in 0.5s ease-out forwards;
+}
+.container .out{
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background:#ee14b7;
+    transform: translate(-50%,-50%);
+    animation: out 0.5s ease-out forwards;
+}
+@keyframes in{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{
+        width: 1200px;
+        height: 1200px;
+    }
+}
+@keyframes out{
+    0%{
+        width: 1200px;
+        height: 1200px;
+    }
+    100%{
+        width: 0;
+        height: 0;
+    }
+}
